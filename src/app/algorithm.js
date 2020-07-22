@@ -8,6 +8,14 @@ var data = {
   ]
 };
 
+var data_2 = {
+  labels: ['Jan', 'Feb', 'Mar', 'Apr', 'Mai', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+    series: [
+    [5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5],
+    [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10]
+  ]
+};
+
 var options = {
   seriesBarDistance: 15
 };
@@ -34,3 +42,6 @@ var responsiveOptions = [
 new Chartist.Bar('.ct-chart', data, options, responsiveOptions);
 
 
+elem.onclick = function() {
+  new Chartist.Bar('.ct-chart', data_2, options, responsiveOptions);
+};
