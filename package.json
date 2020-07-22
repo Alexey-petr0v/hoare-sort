@@ -1,0 +1,29 @@
+{
+  "name": "hoare-sort",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "webpack": "^4.43.0"
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "^4.3.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "scripts": {
+    "start": "webpack-dev-server",
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alexey-petr0v/hoare-sort.git"
+  },
+  "author": "alexey-petr0v@yandex.ru",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alexey-petr0v/hoare-sort/issues"
+  },
+  "homepage": "https://github.com/Alexey-petr0v/hoare-sort#readme"
+}
