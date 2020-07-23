@@ -1,12 +1,19 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+
+const PATHS = {
+  app: path.resolve(__dirname, "src/app"),
+  dist: path.resolve(__dirname, "dist")
+}
+
 module.exports = {
-  entry: __dirname + "/src/app/index.js",
+  entry: {
+    bundle: PATHS.app + "/index.js"
+  },
   output: {
-    path: __dirname + '/dist',
-    filename: 'bundle.js',
-    publicPath: '/'
+    filename: "[name].js",
+    path: PATHS.dist,
   },
   module: {
     rules: [
@@ -44,7 +51,6 @@ module.exports = {
       })
   ],
   devServer: {
-      contentBase: './src/public',
       port: 7700,
   } 
 };
